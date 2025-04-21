@@ -1,0 +1,107 @@
+<html><head><title>CS Theory Winter School</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    
+    </head><body>
+    
+    
+    <div class="body-wrap">
+        <nav class="w3-sidebar w3-collapse w3-bar-block w3-top w3-large w3-padding" role="navigation" style="z-index:3; width:200px; margin-top:.5px; background-color: #F3C11B; font-weight:200; " id="mySidebar">
+            <div class="w3-bar-block" id="hover" style="padding-top:44px;">
+                <h1 style="margin-top: 50px; margin-bottom: 10px; font-weight: 800;  font-size: 35px;">
+                    Menu
+                </h1>
+                <div style="background-color: #E03E1A; border: black; z-index: 3; width: 130px; height: 7px; margin-bottom: 40px;">
+        
+                </div>
+        
+                <a class="no-underline w3-bar-item w3-text-black w3-button w3-hover-black w3-round-large" style="padding-top:10px; padding-bottom:10px; font-size: 25px; margin-top: 20px; margin-bottom: 20px; " onclick="w3_close()" href="index.html">Home</a>
+                <a class="no-underline w3-bar-item w3-text-black w3-button w3-hover-black w3-round-large" style="padding-top:10px; padding-bottom:10px; font-size: 25px; margin-top: 20px; margin-bottom: 20px;" onclick="w3_close()" href="registration.html">Registration</a>
+                <a class="no-underline w3-bar-item w3-text-black w3-button w3-hover-black w3-round-large" style="padding-top:10px; padding-bottom:10px; font-size: 25px; margin-top: 20px; margin-bottom: 20px;" onclick="w3_close()" href="logistics.html">Logistics</a>
+                <a class="no-underline w3-bar-item w3-text-black w3-button w3-hover-black w3-round-large" style="padding-top:10px; padding-bottom:10px; font-size: 25px; margin-top: 20px; margin-bottom: 20px;" onclick="w3_close()" href="schedule.html">Schedule</a>
+                <a class="no-underline w3-bar-item w3-text-black w3-button w3-hover-black w3-round-large" style="padding-top:10px; padding-bottom:10px; font-size: 25px; margin-top: 20px; margin-bottom: 20px;" onclick="w3_close()" href="gallery.html">Gallery</a>
+            </div>
+            </nav>
+    </div>
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <!-- Top menu on small screens -->
+    <header class="w3-container w3-top w3-hide-large w3-xlarge w3-padding">
+        <a href="javascript:void(0)" class="w3-button w3-margin-right" style="text-decoration: none;" onclick="w3_open()">☰</a>
+        <span></span>
+    </header>
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <!-- Overlay of sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="" id="myOverlay"></div>
+    
+    
+    
+    <div class="w3-main" style="margin-left:190px; padding:3px">
+    
+    <!-- Begin Content -->
+    <div class="w3-content" style="max-width:2000px">
+    <div class="w3-content" style="max-width:2000px; width: 100%; margin-top:-18px;">
+    
+    
+          <!-- Registration -->
+          <div class="w3-row w3-padding-large" id="registration">
+              <div style="display: flex;">
+            <h1 class="heading" id="home" style="z-index: 8; letter-spacing: 2px; white-space: nowrap;  text-shadow: none; color:white; width: 450px;
+            margin-left: 30%; margin-right: auto;  font-size: 3.2vw; font-weight: 600; text-decoration: underline; color: #0C8CE9;"><br>
+                Registration
+                
+            </h1>
+            <img src="IIT_Delhi_logo.png" style="width: 135px; height: 135px;  margin-left: auto; margin-top: 7px; margin-right: 5px;">
+            </div><br>
+
+          <p class=" w3-justify" style="font-weight: lighter; font-size: 1.4rem;">
+    
+            <!-- <b> IIT Delhi students:</b>
+            Please fill this <a href="https://www.sdssfsjdhlsh.com"
+            class="realblue">form</a> for registration.
+            Preference will be given to senior UG and PG students. <br><br>
+    
+    
+            <b> Students outside IIT Delhi:</b>-->
+            The winter school is open to pre-final and final year undergraduate students, and masters students.
+            Interested candidates should fill this <a href="https://forms.gle/wnmt8Dwn256hjMbn7" class="realblue">application form</a>
+            latest by <b>31st&nbsp;October</b>.
+            We will shortlist around 50 students (based on undergraduate academic performance and a short `statement of interest').
+            <br> <br>
+    
+            <!--The applications are now closed.-->
+            The details of the selected applicants and procedure to register will be communicated over email
+            <b>within two weeks from the application deadline</b>. <!--by <b>07th&nbsp;November</b>.-->
+            <br><br>
+    
+    
+    
+          </p>
+          </div>
+    
+    </div>
+    <!-- End Content -->
+    </div>
+    
+    
+    </div>
+    
+    
+    <script>
+    // Script to open and close sidebar
+    function w3_open()
+    {
+      document.getElementById("mySidebar").style.display = "block";
+      document.getElementById("myOverlay").style.display = "block";
+    }
+    function w3_close()
+    {
+      document.getElementById("mySidebar").style.display = "none";
+      document.getElementById("myOverlay").style.display = "none";
+    }
+    </script>
+    
+    
+    
+    </body></html>

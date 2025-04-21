@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <title>
+        CS Theory Winter School
+    </title>
+    <meta charset="UTF-8"3
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+
+<style>
+    @media (max-width: 1600px){
+        .res-p{
+            margin-right: 65px;
+            width: 40%;
+            font-size: 1.2rem;
+            flex: 1;
+        }
+        .res-img{
+            width: 40%; 
+            height: 60%;
+            margin-left: auto; 
+            transition: all 0.3s ease; 
+            margin-top: 0px;
+        }
+    }
+        
+
+    @media (max-width: 800px) {
+
+      .responsive-box {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .responsive-box img {
+        width: 100%; 
+        /* max-width: 300px; */
+        align-self: center;
+        /* margin-left: auto; */
+        margin-right: auto;
+        flex: 1;
+      }
+
+      .responsive-box p {
+        font-size: 1rem;
+        margin: 0 ;
+        /* margin-left: auto;  */
+        /* width : 80vw;  */
+        /* width: 100%; */
+        width: 100%;
+        flex: 1;
+        /* margin-right: 0; */
+      }
+    }
+  </style>
+</head>
+
+<body>
+    <div class="body-wrap">
+    <nav class="w3-sidebar w3-collapse w3-bar-block w3-top w3-large w3-padding" role="navigation" style="z-index:3; width:200px; margin-top:.5px; background-color: #F3C11B; font-weight:200; " id="mySidebar">
+    <div class="w3-bar-block" id="hover" style="padding-top:44px;">
+        <h1 style="margin-top: 50px; margin-bottom: 10px; font-weight: 800;  font-size: 35px;">
+            Menu
+        </h1>
+        <div style="background-color: #E03E1A; border: black; z-index: 3; width: 130px; height: 7px; margin-bottom: 40px;">
+
+        </div>
+
+        <a class="no-underline w3-bar-item w3-text-black w3-button w3-hover-black w3-round-large" style="padding-top:10px; padding-bottom:10px; font-size: 25px; margin-top: 20px; margin-bottom: 20px; " onclick="w3_close()" href="index.html">Home</a>
+        <a class="no-underline w3-bar-item w3-text-black w3-button w3-hover-black w3-round-large" style="padding-top:10px; padding-bottom:10px; font-size: 25px; margin-top: 20px; margin-bottom: 20px;" onclick="w3_close()" href="registration.html">Registration</a>
+        <a class="no-underline w3-bar-item w3-text-black w3-button w3-hover-black w3-round-large" style="padding-top:10px; padding-bottom:10px; font-size: 25px; margin-top: 20px; margin-bottom: 20px;" onclick="w3_close()" href="logistics.html">Logistics</a>
+        <a class="no-underline w3-bar-item w3-text-black w3-button w3-hover-black w3-round-large" style="padding-top:10px; padding-bottom:10px; font-size: 25px; margin-top: 20px; margin-bottom: 20px;" onclick="w3_close()" href="schedule.html">Schedule</a>
+        <a class="no-underline w3-bar-item w3-text-black w3-button w3-hover-black w3-round-large" style="padding-top:10px; padding-bottom:10px; font-size: 25px; margin-top: 20px; margin-bottom: 20px;" onclick="w3_close()" href="gallery.html">Gallery</a>
+    </div>
+    </nav>
+    </div>
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <!-- Top menu on small screens -->
+    <header class="w3-container w3-top w3-hide-large w3-xlarge w3-padding">
+        <a href="javascript:void(0)" class=" w3-text-black w3-hover-dark-yellow w3-button w3-margin-right" style="text-decoration: none;" onclick="w3_open()">☰</a>
+        <span></span>
+    </header>
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <!-- Overlay of sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="" id="myOverlay"></div>
+    
+    
+    
+    <div class="w3-main" style="margin-left:190px; padding:3px">
+    
+    <div style="display: flex; margin-right: 30px;">
+    <h1 class="heading" id="home" style="z-index: 8; letter-spacing: 2px; white-space: nowrap;  text-shadow: none; color:white; width: 450px;
+    margin-left: 150px; align-content: center; font-size: 3.2vw; font-weight: 600; text-decoration: underline; color: #0C8CE9;"><br>
+        IIT CS Workshop
+        
+    </h1>
+
+    <img src="IIT_Delhi_logo.png" style="width: 130px; height: 130px;  margin-left: auto;">
+       
+
+    <!-- </div> -->
+    </div>
+    
+    
+    <!-- Begin Content -->
+    <div class="w3-content" style="max-width:2000px ">
+    <div class="w3-content" style="max-width:1600px; width: 100%; margin-top:0px; margin-right: 0px; margin-left: 0px;">
+    
+    
+          <div class="w3-row w3-center w3-padding-large responsive-box" style="display: flex; margin: auto; flex-wrap: nowrap; gap: 20px; ">
+          <!-- <h1 class="w3-text-realblue w3-padding-72">
+            Welcome to IITD TCS Winter School!
+          </h1> -->
+          <p class="w3-large w3-text-darkgrey w3-justify res-p" style="transition: all 0.3s ease; ">
+    
+    
+          The <a class="realblue" href="https://cstheory.iitd.ac.in/">CS Theory group</a>
+          is excited to host a four-day winter school, supported by Mohit Aron endowment,
+          intended to introduce participants to interesting research areas of Theoretical Computer Science.
+          This school will be held from <b> 11th&nbsp;December, 2023 </b> to <b>14th&nbsp;December, 2023</b>
+          at IIT Delhi campus. The school will have lectures by various faculty members
+          on topics ranging from Algorithms, Computational social choice, Communication complexity, Security protocol verification and more.
+          There will also be tutorials, activity sessions, opportunities for informal interaction with the faculty members and graduate students at IIT Delhi.
+          
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae nobis aliquam, ab officia laborum, similique nisi a fuga necessitatibus, aspernatur cum soluta obcaecati laboriosam incidunt deleniti autem. Labore, recusandae dolorem?
+          <br><br>
+    
+          <!--The applications are now open! </b> Interested pre-final and final year undergraduate students and masters students
+          must fill this <a class="realblue" href="https://forms.gle/wnmt8Dwn256hjMbn7">application form</a> by 31st&nbsp;October.
+          We will shortlist around fifty students (based on academic performance and a short
+          `statement of interest').<br><br>-->
+    
+          <strong>Summer Internship:&nbsp;</strong>
+          There will also be opportunities for the winter school participants to do an internship with CSE faculty members. The internships will be during summer 2024 and a stipend will be provided to cover living and lodging expenses in the IIT hostel.      
+          <br><br>
+          </p>
+          
+          <img src="1231_1654764570.jpg" class="res-img" >    
+          </div>
+    
+          <hr>
+    
+          <!-- Invited Speakers --> 
+          <!--
+          <div class="w3-row w3-center w3-padding-large" id="invitedSpeakers">
+          <h1 class="w3-text-realblue w3-padding-72">Invited Speakers</h1><br>
+          <div class="row w3-content">
+    
+              <table class="w3-table">
+              <tr style="vertical-align: baseline">
+                  <td style="width:100px">
+                    <div align="center">
+                    <p><img src="images/a.jpeg"   height="150"></p>
+                    <p style="font-weight: bold; text-align: center">
+                    Name A<br>
+                    <span style="font-weight: normal">Institute A</span>
+                    </p>
+                    </div>
+                  </td>
+    
+                  <td style="width:100px">
+                    <div align="center">
+                    <p><img src="images/a.jpeg"   height="150"></p>
+                    <p style="font-weight: bold; text-align: center">
+                    Name B<br>
+                    <span style="font-weight: normal">Institute B</span>
+                    </p>
+                    </div>
+                  </td>
+    
+                  <td style="width:100px">
+                    <div align="center">
+                    <p><img src="images/a.jpeg"   height="150"></p>
+                    <p style="font-weight: bold; text-align: center">
+                    Name C<br>
+                    <span style="font-weight: normal">Institute C</span>
+                    </p>
+                    </div>
+                  </td>
+              </tr>
+              </table>
+          </div>
+          </div>
+          <hr>
+      -->
+    
+    
+    
+          <!-- Instructors -->
+          <div class="w3-row w3-center w3-padding-large">
+            <h1 class="heading" id="home" style="z-index: 8; letter-spacing: 2px; white-space: nowrap;  text-shadow: none; color:white; width: 450px;
+            margin-left: auto; margin-right: auto; align-content: center; font-size: 3.2vw; font-weight: 600; text-decoration: underline; color: #0C8CE9;"><br>
+                Speakers
+                
+            </h1>
+          <div class="row w3-content">
+          <table class="w3-table">
+    
+              <tbody><tr style="vertical-align: baseline">
+                  <td style="width:100px">
+                    <div align="center">
+                    <p><img src="https://vaishs.github.io/assets/img/me.jpg" height="150" style="border-radius: 50%;"></p>
+                    <p style="font-weight: bold; text-align: center; font-size: 1.3rem;">
+                    Amit Kumar
+                    <br>
+                    <span style="font-weight: normal; font-size: 0.9rem;">IIT Delhi</span>
+                    </p>
+                    </div>
+                  </td>
+    
+                  <td style="width:100px">
+                    <div align="center">
+                    <p><img src="https://vaishs.github.io/assets/img/me.jpg" height="150" style="border-radius: 50%;"></p>
+                    <p style="font-weight: bold; text-align: center; font-size: 1.3rem;">
+                    Ashish Chiplunkar<br>
+                    <span style="font-weight:normal; font-size: 0.9rem;"> IIT Delhi</span>
+                    </p>
+                    </div>
+                  </td>
+    
+                  <td style="width:100px">
+                    <div align="center">
+                    <p><img src="https://vaishs.github.io/assets/img/me.jpg" height="150" style="border-radius: 50%;"></p>
+                    <p style="font-weight: bold; text-align: center; font-size: 1.3rem;">
+                    Keerti Choudhary<br>
+                    <span style="font-weight: normal; font-size: 0.9rem;">IIT Delhi</span>
+                    </p>
+                    </div>
+                  </td>
+    
+                </tr>
+                
+                <tr style="vertical-align: baseline">
+    
+                  <td style="width:100px">
+                    <div align="center">
+                    <p><img src="https://vaishs.github.io/assets/img/me.jpg" height="150" style="border-radius: 50%;"></p>
+                    <p style="font-weight: bold; text-align: center; font-size: 1.3rem;">
+                    Rohit Vaish<br>
+                    <span style="font-weight: normal; font-size: 0.9rem;">IIT Delhi</span>
+                    </p>
+                    </div>
+                  </td>
+    
+                  <td style="width:100px">
+                    <div align="center">
+                    <p><img src="https://vaishs.github.io/assets/img/me.jpg" height="150" style="border-radius: 50%;"></p>
+                    <p style="font-weight: bold; text-align: center; font-size: 1.3rem;">
+                    Vaishnavi Sundararajan<br>
+                    <span style="font-weight:normal; font-size: 0.9rem;"> IIT Delhi</span>
+                    </p>
+                    </div>
+                  </td>
+              </tr>
+              </tbody></table>
+          </div>
+        </div>
+          <hr>
+    
+          <!-- Contact -->
+          <div class="w3-container w3-padding-64 w3-center">
+            <h1 class="heading" id="home" style="z-index: 8; letter-spacing: 2px; white-space: nowrap;  text-shadow: none; color:white; width: 450px;
+            margin-left: auto; margin-right: auto; align-content: center; font-size: 3.2vw; font-weight: 600; text-decoration: underline; color: #0C8CE9;"><br>
+                Contact
+                
+            </h1><br>
+              <p class="w3-center w3-text-darkgrey" style="font-weight: normal;"><b>Email:- cstheory.iitd@gmail.com</b></p>
+              <br>
+              <p class="w3-center w3-text-darkgrey" style="font-weight: normal;"><b>Follow us on X :- </b></p>
+          </div>
+    
+    
+    
+          <br><br>
+    
+    </div>
+    <!-- End Content -->
+    </div>
+    
+    
+    </div>
+    
+    
+    <script>
+    // Script to open and close sidebar
+    function w3_open()
+    {
+      document.getElementById("mySidebar").style.display = "block";
+      document.getElementById("myOverlay").style.display = "block";
+    }
+    function w3_close()
+    {
+      document.getElementById("mySidebar").style.display = "none";
+      document.getElementById("myOverlay").style.display = "none";
+    }
+    </script>
+    
+    
+    
+    </body></html>
