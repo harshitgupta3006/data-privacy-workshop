@@ -10,6 +10,19 @@ h1,h2,h3,h4,h5{
     letter-spacing: 1px;
 }
 
+.site-footer {
+  text-align: right;
+  padding: 0px;
+  margin: 0px;
+  /* margin-left: auto; */
+  font-size: 14px;
+  color: #666;
+  background-color: #f9f9f9; /* optional */
+  /* position: relative; or fixed if you want it to stick */
+  bottom: 0;
+  width: 100%;
+}
+
 
 h1.heading {
   font-size: 60px;
